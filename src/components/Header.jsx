@@ -38,7 +38,7 @@ export function Header(){
         <div className='h-18 py-2  px-4 bg-[rgb(0, 0, 39)] flex items-center'>
             <div className=' p-2 px-0 w-full flex justify-between md:justify-around gap-2 items-center'>
                 <img src={logo} className='h-8 md:h-12'/>
-                <div className=' flex  gap-4 font-semibold  text-white'>
+                <div className=' flex  gap-2 font-semibold  text-white'>
                     {menu.map((m) => <Nav Icon={m.icon} Title={m.title}/>)}
                 </div>
                 <div >
