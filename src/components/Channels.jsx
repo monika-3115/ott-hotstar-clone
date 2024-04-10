@@ -50,7 +50,7 @@ function Channel({src, vid}){
 
     return (
         <div className='relative rounded-md border-2 border-gray-500 hover:border-gray-100 hover:scale-110 ease-in-out cursor-pointer duration-300 shadow-lg shadow-gray-700'>
-            <video src={vid} autoPlay loop muted playsInline className='w-[100px] h-[56px] object-fill absolute z-0 rounded-sm opacity-0 hover:opacity-50'/>
+            <video src={vid} autoPlay loop muted playsInline className='absolute z-0 rounded-sm opacity-0 hover:opacity-50'/>
             <img className='' src={src}/>
         </div>
     )

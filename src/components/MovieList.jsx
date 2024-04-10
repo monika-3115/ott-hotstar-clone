@@ -29,7 +29,7 @@ export function MovieList({gener_id}){
 
     return (
         <div className="relative">
-            <div ref={elementRef} className="flex gap-4 md:gap-8 overflow-auto mx-4  scroll-smooth scrollbar-none">
+            <div ref={elementRef} className="flex gap-1 md:gap-8 overflow-auto mx-4  scroll-smooth scrollbar-none">
                 <MdOutlineKeyboardArrowLeft className="hidden md:block absolute z-10 top-[40%] left-4 text-4xl text-white" onClick={() => {moveLeft(elementRef.current)}}/>
                 {movies && movies.map((m, index) => index<=10&& (
                     <div className="h-full p-4 min-w-[150px] md:min-w-[220px] rounded-lg cursor-pointer hover:scale-110 ease-in-out duration-300">

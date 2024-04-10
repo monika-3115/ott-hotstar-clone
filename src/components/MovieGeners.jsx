@@ -82,9 +82,9 @@ const genere= [
 export function MovieGeners(){
 
     return (
-        <div className='m-10'>
+        <div className='m-5 md:m-10'>
             {genere.map((g) => (
-                <div className='my-16'>
+                <div className='my-8 md:my-16'>
                     <h1 className='text-white text-2xl font-semibold my-4'>{g.name}</h1>
                     <MovieList gener_id={g.id}/>
                 </div>
