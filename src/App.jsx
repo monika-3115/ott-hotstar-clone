@@ -8,14 +8,15 @@ import './App.css'
 function App() {
  
   return (
-    <Analytics>
+    
     <div className='hi h-full'>
+      <Analytics mode={'production'} />
       <Header />
       <Slider />
       <Channels/>
       <MovieGeners />
     </div>
-    </Analytics>
+    
   )
 }
 
