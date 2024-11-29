@@ -10,9 +10,10 @@ export function Slider(){
 
     const [data, setData] = useState()
     const elementRef = useRef()
-
+    
+    //https://api.themoviedb.org/3
     const movieBaseUrl="https://api.themoviedb.org/3"
-    const api_key='2ec0d66f5bdf1dd12eefa0723f1479cf'
+    const api_key='fe101b219fc647c9b01337079aaeb22e'
 
     function moveLeft(element){
         // console.log(element)
@@ -28,7 +29,6 @@ export function Slider(){
         .then(response => response.json())
         .then(json => {
             setData(json.results);
-            // console.log(json.results); // Move this line here
         })
         .catch(() => setData('error'))
 
@@ -39,7 +39,7 @@ export function Slider(){
             <MdOutlineKeyboardArrowLeft className="hidden md:block absolute top-1/2 left-1 text-4xl text-white" onClick={() => {moveLeft(elementRef.current)}}/>  
             <div ref={elementRef} className="scroll-smooth flex gap-10 py-6 scrollbar-none px-14 w-full   overflow-x-auto">
                 {data && data.map((d, index) => (index<10) ?
-                    (<img className='md:h-[310px] min-w-full object-cover object-top rounded-lg border-white hover:border-2' src={'https://image.tmdb.org/t/p/original' + d.backdrop_path} title={d.title? d.title : d.name}/>)
+                    (<img className='md:h-[600px] min-w-full object-cover object-top rounded-lg border-white hover:border-2' src={'https://image.tmdb.org/t/p/original' + d.backdrop_path} title={d.title? d.title : d.name}/>)
                     : null
                 )}
             </div>
