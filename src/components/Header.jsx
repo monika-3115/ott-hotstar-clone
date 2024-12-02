@@ -8,6 +8,7 @@ import { IoTrashBin } from "react-icons/io5";
 
 const API_KEY = "fe101b219fc647c9b01337079aaeb22e";
 
+
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
